@@ -6,9 +6,39 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  gap: 18px;
+  margin-top: 32px;
+  @media screen and (min-width: 641px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
-.cardwrapper {
+
+.postlink {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (min-width: 641px) {
+    width: 350px;
+  }
+  @media only screen and (min-width: 961px) {
+    width: 450px;
+  }
+}
+.cardbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (min-width: 641px) {
+    width: 350px;
+  }
+
+  @media only screen and (min-width: 961px) {
+    width: 450px;
+  }
 }

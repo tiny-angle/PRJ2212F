@@ -14,16 +14,16 @@ const IndexPage = ({ data }) => {
     <Layout pageTitle="Home Page">
       <div className={homeStyles.postlist}>
         {nodes.map((node) => (
-          <div key={node.id} className={homeStyles.cardwrapper}>
-            <Link className={homeStyles.postlink} to={`/article/${node.slug}`}>
+          <Link className={homeStyles.postlink} to={`/article/${node.slug}`}>
+            <div key={node.id} className={homeStyles.cardbox}>
               <Card
                 title={node?.title}
                 imgurl={node?.cover?.url}
                 updatedAt={node?.updatedAt}
                 tag={node?.tags[0].tagname}
               />
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </div>
     </Layout>
