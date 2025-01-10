@@ -1,3 +1,11 @@
 node_modules/
 .cache/
 public/
+.gitignore
+gatsby-config.js
+
+#https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap?=robots
+#https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/?=google%20tag
+#https://www.gatsbyjs.com/plugins/gatsby-plugin-addsocialshare-share/?=social
+#https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap?=robots
+#https://www.smashingmagazine.com/2023/10/gatsby-headaches-working-media-part2/

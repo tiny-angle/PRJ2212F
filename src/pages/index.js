@@ -14,8 +14,8 @@ const IndexPage = ({ data }) => {
     <Layout pageTitle="Home Page">
       <div className={homeStyles.postlist}>
         {nodes.map((node) => (
-          <Link className={homeStyles.postlink} to={`/article/${node.slug}`}>
-            <div key={node.id} className={homeStyles.cardbox}>
+          <Link key={node.id} className={homeStyles.articlelink} to={`/article/${node.slug}`}>
+            <div className={homeStyles.cardbox}>
               <Card
                 title={node?.title}
                 imgurl={node?.cover?.url}

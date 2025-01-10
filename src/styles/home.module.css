@@ -8,20 +8,25 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 18px;
   margin-top: 32px;
-  @media screen and (min-width: 641px) {
+
+  /* margin-top: 32px; */
+
+  @media only screen and (min-width: 641px) {
+    align-items: flex-start !important;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
   }
 }
 
-.postlink {
+.articlelink {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media only screen and (min-width: 641px) {
     width: 350px;
   }
@@ -29,11 +34,13 @@ a {
     width: 450px;
   }
 }
+
 .cardbox {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media only screen and (min-width: 641px) {
     width: 350px;
   }
